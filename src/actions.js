@@ -1,4 +1,4 @@
-export const FILTER_PRODUCTS = 'FILTER_PRODUCTS';
+export const FILTER_PRODUCTS = 'FILTER_PRODUCTS'
 
 // export const filterProducts = function (filterType) {
 //   return {
@@ -16,4 +16,4 @@ const makeActionCreator = function (actionType) {
   }
 }
 
-export const filterProducts = makeActionCreator(FILTER_PRODUCTS);
+export const filterProducts = makeActionCreator(FILTER_PRODUCTS)
