@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {filterProducts} from "../actions";
+import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import {filterProducts} from "../actions"
 
 class FilterProducts extends Component {
-    createFilterRadio(value, text) {
+    createFilterRadio (value, text) {
         return (
             // Create a `<button>` template which will accept a `value` and `text` from the `createFilterRadio` function
             // The button should call the `filterProducts` `onClick`, passing in the `value` as it's argument.
@@ -14,7 +14,7 @@ class FilterProducts extends Component {
             <button key={value} className={this.props.filter === value ? 'active' : 'inactive'} onClick={ event => this.props.filterProducts(value) }>{text}</button>
         )
     }
-    render() {
+    render () {
         const filterOptions = [
             [
               "all", "Show all"
@@ -45,9 +45,9 @@ const mapStateToProps = function (state) {
 const mapDispatchToProps = function (dispatch) {
     return {
         filterProducts: function (filter) {
-            dispatch(filterProducts (filter));
+            dispatch(filterProducts(filter))
         }
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(FilterProducts);
+export default connect(mapStateToProps, mapDispatchToProps)(FilterProducts)

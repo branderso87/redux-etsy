@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
 class Product extends Component {
-    render() {
-        const {product} = this.props;
+    render () {
+        const {product} = this.props
 
         return (
             <li>
@@ -14,4 +14,4 @@ class Product extends Component {
     }
 }
 
-export default Product;
+export default Product
